@@ -1,60 +1,83 @@
-# Alzheimer's Disease Analysis using Federated Learning (Prototype)
+# 🧠 Alzheimer's Disease Detection using Federated Learning (Prototype)
 
-## Overview
-This repository presents a **baseline implementation** for Alzheimer's disease detection using an Artificial Neural Network (ANN).  
-The current work serves as a **centralized, non-pipelined model**, designed as a foundation for future **Federated Learning (FL)** experiments involving distributed and privacy-sensitive clinical data.
+[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-## Motivation
-Medical data is highly sensitive and often distributed across institutions, making centralized machine learning approaches impractical.  
-Federated Learning offers a privacy-preserving alternative by enabling collaborative model training without sharing raw patient data.
+---
 
-This project aims to explore the feasibility of applying Federated Learning to Alzheimer's disease analysis.
+## 📌 Project Overview
+This repository presents a **baseline non-pipelined ANN** for Alzheimer's disease detection.  
+The model serves as a **foundation for future experiments**, allowing privacy-preserving analysis across distributed datasets.
 
-## Current Implementation
-- Centralized ANN
-- Binary classification (Diagnosis)
-- Feature preprocessing with encoding and normalization
-- Performance evaluation using standard classification metrics
+> ⚠️ **Note:** This is a prototype. The full implementation will be developed soon.
 
-This implementation acts as a **baseline model** for future federated extensions.
+---
 
-## Model Architecture
-- Input Layer: Preprocessed clinical features
-- Hidden Layers:
-  - Dense (4 units, ReLU)
-  - Dense (4 units, ReLU)
-- Output Layer:
-  - Dense (1 unit, Sigmoid)
+## 🗂 Repository Structure
 
-## Results (Preliminary)
-The following results are obtained on a held-out test set and should be treated as **initial experimental observations**.
+| Folder/File | Description |
+|-------------|-------------|
+| `data/` | Placeholder for dataset (`alzheimers_disease_data.csv`) with README only |
+| `src/` | Python scripts: `non_pipelined_ann.py` |
+| `results/` | Confusion matrix, loss & accuracy curves |
+| `README.md` | This file |
+| `requirements.txt` | Python dependencies |
+| `.gitignore` | Ignore unnecessary files |
+
+---
+
+## 🔬 Model Architecture
+
+| Layer | Units | Activation |
+|-------|-------|------------|
+| Input |  —    | —          |
+| Hidden Layer 1 | 4 | ReLU |
+| Hidden Layer 2 | 4 | ReLU |
+| Output Layer   | 1 | Sigmoid |
+
+> This ANN acts as a centralized baseline. Future work includes **conversion to Federated Learning**.
+
+---
+
+## ⚙️ Features & Preprocessing
+- Categorical feature encoding using **OneHotEncoder**
+- Feature scaling via **StandardScaler**
+- Train/test split: 75% / 25%
+- Evaluation metrics:
+  - Accuracy, Precision, Recall, F1-score
+  - Confusion Matrix
+
+---
+
+## 📈 Results (Preliminary)
 
 ### Confusion Matrix
-![Confusion Matrix](results/confusion_matrix.png)
+<img src="results/confusion_matrix.png" alt="Confusion Matrix" width="400"/>
 
-### Training and Validation Loss
-![Loss Curve](results/loss_curve.png)
+### Training & Validation Loss
+<img src="results/loss_curve.png" alt="Loss Curve" width="400"/>
 
-### Training and Validation Accuracy
-![Accuracy Curve](results/accuracy_curve.png)
+### Training & Validation Accuracy
+<img src="results/accuracy_curve.png" alt="Accuracy Curve" width="400"/>
 
-## Tools & Technologies
-- Python
-- TensorFlow / Keras
-- NumPy, Pandas
-- Scikit-learn
-- Matplotlib, Seaborn
+> These are preliminary results to demonstrate the baseline ANN functionality.  
 
-## Planned Extensions (Under Research)
-The following aspects are intentionally left open for further research and academic guidance:
+---
 
-- Conversion of the centralized model into a Federated Learning setup
-- Simulation of multiple clients representing distributed hospitals
-- Analysis of communication efficiency in FL
-- Evaluation of client data heterogeneity
-- Comparison between pipelined and non-pipelined ANN in federated settings
-- Exploration of privacy-preserving mechanisms
+## 🔮 Planned Extensions (Research Scope)
 
-## Intended Use
-This repository is part of an ongoing research effort and is intended for **academic and research purposes only**.
+<details>
+<summary>Click to expand planned FL extensions</summary>
+
+- Convert baseline ANN into **Federated Learning setup** using Flower or PySyft
+- Simulate **multiple clients** representing distributed hospitals
+- Analyze **client heterogeneity** and communication efficiency
+- Compare **pipelined vs non-pipelined ANN** in FL context
+- Implement **privacy-preserving mechanisms** like differential privacy
+- Explore model interpretability for clinical insights
+
+</details>
+
+
 
