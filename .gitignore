@@ -1,0 +1,54 @@
+# ===============================
+# Python cache and compiled files
+# ===============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===============================
+# Virtual environments
+# ===============================
+venv/
+env/
+.venv/
+
+# ===============================
+# Jupyter Notebook checkpoints
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# Dataset files (DO NOT upload data)
+# ===============================
+data/*.csv
+data/*.xlsx
+data/*.txt
+
+# ===============================
+# Model artifacts
+# ===============================
+*.h5
+*.keras
+*.ckpt
+*.pb
+
+# ===============================
+# Logs and training outputs
+# ===============================
+logs/
+*.log
+
+# ===============================
+# OS / Editor specific files
+# ===============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===============================
+# Experiment outputs (optional)
+# ===============================
+results/*.csv
+results/*.txt
