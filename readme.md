@@ -1,4 +1,4 @@
-# 🧠 Alzheimer's Disease Detection using Federated Learning (Prototype)
+# 🧠 Alzheimer's Disease Analysis using Artificial Neural Network
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
