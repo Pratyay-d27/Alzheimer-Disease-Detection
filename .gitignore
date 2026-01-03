@@ -19,13 +19,6 @@ env/
 .ipynb_checkpoints/
 
 # ===============================
-# Dataset files (DO NOT upload data)
-# ===============================
-data/*.csv
-data/*.xlsx
-data/*.txt
-
-# ===============================
 # Model artifacts
 # ===============================
 *.h5
