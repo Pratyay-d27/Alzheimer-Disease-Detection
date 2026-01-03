@@ -58,7 +58,3 @@ The following aspects are intentionally left open for further research and acade
 ## Intended Use
 This repository is part of an ongoing research effort and is intended for **academic and research purposes only**.
 
-## Author
-**Pratyay Ghose**  
-Final Year B.Tech (CSE/IT)  
-Techno International Newtown
