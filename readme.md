@@ -18,7 +18,7 @@ The model serves as a **foundation for future experiments**, allowing privacy-pr
 
 | Folder/File | Description |
 |-------------|-------------|
-| `data/` | Placeholder for dataset (`alzheimers_disease_data.csv`) with README only |
+| `data/` | Dataset (`alzheimers_disease_data.csv`) with README |
 | `src/` | Python scripts: `non_pipelined_ann.py` |
 | `results/` | Confusion matrix, loss & accuracy curves |
 | `README.md` | This file |
